@@ -6,28 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="0"
+        android:translationX="180dp"
+        android:translationY="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonMiddle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
         android:id="@+id/ButtonLeft"
-        android:translationX="0dp"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:text="O"
+        android:translationX="75dp"
+        android:translationY="250dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
         android:id="@+id/ButtonMiddle"
-        android:translationX="100dp"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:onClick="onClickButton"
+        android:text="O"
+        android:translationX="160dp"
+        android:translationY="250dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/ButtonRight"
-        android:translationX="200dp"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButton"
+        android:text="O"
+        android:translationX="245dp"
+        android:translationY="250dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
