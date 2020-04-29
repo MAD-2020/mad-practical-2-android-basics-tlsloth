@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button ButtonMiddle;
     private Button ButtonRight;
     private TextView tv;
-    private static final String TAG = "ButtonActivity";
+    private static final String TAG = "Whack-A-Mole";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
             if (b == mole){
                 b.setText("*");
             }
-            else{
-                b.setText("O");
-            }
+
         }
     }
     //Function to check if the button pressed is a mole or not
@@ -82,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         String score = String.valueOf(Score);
         tv.setText(score);
     }
-    //Onclick button function, to handle the click event handler defined in the xml file
+    //Onclick button function, to handle the click event handler, i defined it in the xml file
     public void onClickButton(View v){
         //Practical 2.1
         switch(v.getId()){
@@ -122,3 +120,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
